@@ -1,0 +1,21 @@
+{
+  "name": "ms-producto-facturador-electronico",
+  "profiles": ["default"],
+  "label": "main",
+  "version": "test",
+  "propertySources": [
+    {
+      "name": "test-git/ms-producto-facturador-electronico.properties",
+      "source": {
+        "config.integration.message": "producto-desde-config-server",
+        "spring.datasource.url": "jdbc:h2:mem:producto-config-test;MODE=MySQL;DB_CLOSE_DELAY=-1",
+        "spring.datasource.driver-class-name": "org.h2.Driver",
+        "spring.datasource.username": "sa",
+        "spring.datasource.password": "",
+        "spring.jpa.hibernate.ddl-auto": "create-drop",
+        "spring.jpa.open-in-view": false,
+        "eureka.client.enabled": false
+      }
+    }
+  ]
+}
